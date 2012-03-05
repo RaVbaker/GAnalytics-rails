@@ -7,11 +7,11 @@ require "ganalytics/version"
 Gem::Specification.new do |s|
   s.name        = "ganalytics"
   s.version     = Ganalytics::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Ganalytics."
-  s.description = "TODO: Description of Ganalytics."
+  s.authors     = ["Rafal 'RaVbaker' Piekarski"]
+  s.email       = ["ravbaker@gmail.com"]
+  s.homepage    = "N/A"
+  s.summary     = "Gives ruby interface for google analytics usage on rails sites."
+  s.description = "Soon more."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
