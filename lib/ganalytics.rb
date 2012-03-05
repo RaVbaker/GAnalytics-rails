@@ -1,0 +1,2 @@
+module Ganalytics
+end
