@@ -33,7 +33,7 @@ class TestGanalytics < ActionController::TestCase
     Ganalytics.track_pageview
     queue = Ganalytics.queue.clone
     Ganalytics.reset
-    Ganalytics.push "_trackPageview", nil
+    Ganalytics.push "_trackPageview"
     assert_equal(queue, Ganalytics.queue)
   end
   
