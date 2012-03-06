@@ -3,10 +3,11 @@ module Ganalytics
 
     # Source of code from: http://code.google.com/apis/analytics/docs/tracking/asyncUsageGuide.html#CommonPitfalls
     def self.tracking_code gaq=[]
+      
       <<-CODE
       <script>
       var _gaq = _gaq || [];
-      _gaq.push(#{gaq_pushes(gaq)})
+      #{gaq_pushes(gaq)}
       
       (function() {
           var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
@@ -17,8 +18,8 @@ module Ganalytics
     end
     
     
-    def self.gaq_pushes gaq
-      gaq.to_json[1..-2]
+    def self.gaq_pushes gaq               
+      "_gaq.push("+gaq.to_json[1..-2]+");" unless gaq.empty?
     end
   end
 end
