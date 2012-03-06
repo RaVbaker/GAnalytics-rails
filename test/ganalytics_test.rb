@@ -12,7 +12,11 @@ class GanalyticsTest < ActionController::TestCase
   
   test "Put Google Analytics tracking code code before the closing </head> tag" do
     get :html_page
-    response_body = @response.body
-    assert_match Ganalytics::Codes.tracking_code+'</head>', response_body
+    assert_match Ganalytics::Codes.tracking_code+'</head>', @response.body
+  end
+  
+  test "Put Google Analytics tracking code to site without </head> tag does nothing" do
+    get :json_page
+    assert_equal @response.body, assigns(:json_response_text)
   end
 end
