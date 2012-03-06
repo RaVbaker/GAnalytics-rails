@@ -1,5 +1,0 @@
-= Ganalytics
-
-This project rocks and uses MIT-LICENSE.   
-
-Soon more.

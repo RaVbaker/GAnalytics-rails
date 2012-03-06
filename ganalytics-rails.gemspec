@@ -5,15 +5,15 @@ require "ganalytics/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "ganalytics"
+  s.name        = "ganalytics-rails"
   s.version     = Ganalytics::VERSION
   s.authors     = ["Rafal 'RaVbaker' Piekarski"]
   s.email       = ["ravbaker@gmail.com"]
-  s.homepage    = "N/A"
-  s.summary     = "Gives ruby interface for google analytics usage on rails sites."
-  s.description = "Soon more."
+  s.homepage    = "https://github.com/RaVbaker/GAnalytics-rails"
+  s.summary     = "This project is created to simplify usage of Google Analytics tracking functionalities in your Rails apps. "
+  s.description = "See more on github: https://github.com/RaVbaker/GAnalytics-rails"
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.2.1"
