@@ -1,5 +1,5 @@
 
-class TestController < ApplicationController
+class PageController < ApplicationController
   def html_page
     
   end 

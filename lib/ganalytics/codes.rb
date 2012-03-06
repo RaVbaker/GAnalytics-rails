@@ -1,5 +1,7 @@
 module Ganalytics
   module Codes
+    
+    # Source of code from: http://code.google.com/apis/analytics/docs/tracking/asyncUsageGuide.html#CommonPitfalls
     def self.tracking_code
       <<-CODE
       <script>(function() {
