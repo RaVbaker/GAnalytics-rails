@@ -8,4 +8,8 @@ class PageController < ApplicationController
     @json_response_text = '{lorem:"ipsum"}'
     render text: @json_response_text
   end
+  
+  def nothing_page
+    render nothing:true
+  end
 end
