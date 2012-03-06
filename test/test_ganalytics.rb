@@ -20,4 +20,9 @@ class TestGanalytics < ActionController::TestCase
     get :nothing_page
     assert_equal @response.body, " "
   end
+  
+  test "When GA code putted add also support for _gaq =[] async JS defining values" do
+    get :html_page
+    assert_match "var _gaq = _gaq || [];", @response.body
+  end
 end
