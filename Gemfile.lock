@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ganalytics (0.0.1)
+    ganalytics-rails (0.3)
       rails (~> 3.2.1)
 
 GEM
@@ -98,7 +98,7 @@ PLATFORMS
 DEPENDENCIES
   ZenTest
   autotest-rails
-  ganalytics!
+  ganalytics-rails!
   jquery-rails
   sqlite3
   test-unit (~> 2.0.0)

@@ -6,7 +6,7 @@ This project is created to simplify usage of Google Analytics tracking functiona
 
 Add proper line to `Gemfile`:
   
-    gem "ganalytics-rails" 
+    gem "ganalytics-rails", require: "ganalytics"
     
 From now your code would have proper Google Analytics snippet right before `</head>` tag. 
   
